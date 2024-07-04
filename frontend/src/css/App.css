@@ -1,0 +1,26 @@
+:root {
+    --global-padding-left: 1em;
+    --background: #222222;
+}
+
+@font-face {
+    font-family: "AppleMyungjo";
+    src: url("../../public/fonts/applemyungjo.woff");
+}
+@font-face {
+    font-family: "SF Mono";
+    src: url("../../public/fonts/sfmono.woff");
+}
+
+body {
+    margin: 0;
+
+    background: var(--background);
+    color: white;
+    padding-top: calc(env(safe-area-inset-top) + 100px);
+    font-family: "AppleMyungjo";
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "SF Mono", monospace;
+}
