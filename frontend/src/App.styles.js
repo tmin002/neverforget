@@ -12,8 +12,8 @@ export const Header = styled.header`
   flex-direction: row;
   align-items: center;
 
-  background: var(--background);
-  box-shadow: 3px 3px 20px var(--background);
+  background: var(--body-background-color);
+  box-shadow: 3px 3px 20px var(--body-background-color);
 `;
 export const TitleText = styled.h1`
   color: white;

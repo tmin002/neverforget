@@ -1,7 +1,8 @@
 :root {
     --global-padding-left: 1em;
-    --background: #222222;
-    --font-color: #1b1000;
+    --body-background-color: #222222;
+    --body-font-color: white;
+    --article-font-color: black;
 }
 
 @font-face {
@@ -16,8 +17,8 @@
 body {
     margin: 0;
 
-    color: var(--font-color);
-    background: var(--background);
+    color: var(--body-font-color);
+    background: var(--body-background-color);
     padding-top: calc(env(safe-area-inset-top) + 100px);
     font-family: "AppleMyungjo";
 }

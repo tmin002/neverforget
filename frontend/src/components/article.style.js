@@ -13,16 +13,11 @@ export const ArticleRoot = styled.div`
   margin-top: 20px;
   background: url(/images/paper_texture.jpg);
   padding: 30px 30px 30px 30px;
-  box-shadow: 0px 0px 20px 1px black;
+  box-shadow: 0 0 20px 1px black;
   font-size: 1.2em;
+  color: var(--article-font-color);
 
-  h1 {
-    font-size: 2em;
-    font-weight: 200;
-  }
-
-  p,
-  a {
+  * {
     font-size: 1em;
   }
 `;
@@ -38,9 +33,9 @@ export const TitleText = styled.div`
   margin: 0;
 `;
 export const HeaderSeparator = styled.hr`
-  margin-bottom: 0;
+  margin-bottom: 1em;
   border-width: 1px 0 0 0;
-  border-color: black;
+  border-color: var(--article-font-color);
 `;
 
 // Article metadata
@@ -66,12 +61,16 @@ export const PathTextRoot = styled.div`
   align-items: baseline;
   justify-content: space-between;
   text-align: left;
-  margin: 0;
+  margin: 0 0 0.2em;
 `;
 
 export const PathTextItem = styled.a`
-  color: var(--font-color);
+  color: var(--article-font-color);
   font-weight: bold;
   text-decoration: none;
   margin: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
